@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="App3.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+    <CalendarDatePicker x:ConnectionId='1' x:Name="MyCalendarDatePicker" Grid.Row="0" DisplayMode="Month" IsCalendarOpen="True"                                                DateFormat = "{}{dayofweek.full}‎, ‎{month.full}‎ ‎{day.integer}‎, ‎{year.full}" PlaceholderText="Choose your date">
+        <!--Customising CalendarDatePicker HeaderTemplate -->
+        <CalendarDatePicker.HeaderTemplate>
+            <DataTemplate>
+                <TextBlock FontSize="18" FontWeight="Bold" Foreground="Green">  
+                            <Underline>  
+                                Windows 10 Calendar control  
+                            </Underline>
+                </TextBlock>
+            </DataTemplate>
+        </CalendarDatePicker.HeaderTemplate>
+    </CalendarDatePicker>
+</Page>
+
